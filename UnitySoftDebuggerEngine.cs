@@ -84,7 +84,8 @@ namespace MonoDevelop.Debugger.Soft.Unity
 		};
 
 		public bool CanDebugCommand (ExecutionCommand command)
-		{			return (command is UnityExecutionCommand && null == session);
+		{
+			return (command is UnityExecutionCommand && null == session);
 		}
 		
 		public DebuggerStartInfo CreateDebuggerStartInfo (ExecutionCommand command)
